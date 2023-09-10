@@ -1,0 +1,146 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Style */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ccc;
+  background-size: cover;
+  padding: 20px;
+}
+
+/* Tabs Style */
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tablink {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: background-color 0.3s;
+}
+
+.tablink:hover {
+  background-color: #2980b9;
+}
+
+/* Tab Content Style */
+.tabcontent {
+  display: none;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid lightgrey;
+}
+
+/* Form Style */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Table Style */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ccc;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #3498db;
+  color: #fff;
+}
+
+/* Resume Style */
+p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+/* ... (kode sebelumnya) ... */
+
+/* Table Style */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+thead {
+  background-color: #3498db;
+  color: #fff;
+}
+
+thead th {
+  padding: 10px;
+  text-align: left;
+}
+
+tbody td {
+  padding: 10px;
+  text-align: left;
+  border-top: 1px solid #ccc;
+}
+
+/* ... (kode selanjutnya) ... */
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+  .tabcontent {
+    padding: 10px;
+  }
+
+  form {
+    max-width: 100%;
+  }
+}

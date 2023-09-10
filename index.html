@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registrasi Pendaftar</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="tabs">
+      <button class="tablink" onclick="openTab('Registrasi')">
+        Registrasi
+      </button>
+      <button class="tablink" onclick="openTab('ListPendaftarcontent')">
+        List Pendaftar
+      </button>
+    </div>
+
+    <div id="Registrasi" class="tabcontent">
+      <h2>Form Registrasi</h2>
+      <form id="registrationForm">
+        <label for="nama">Nama Lengkap:</label>
+        <input
+          type="text"
+          id="nama"
+          name="nama"
+          minlength="10"
+          required
+        /><br /><br />
+
+        <label for="umur">Umur:</label>
+        <input
+          type="number"
+          id="umur"
+          name="umur"
+          min="25"
+          required
+        /><br /><br />
+
+        <label for="uang">Uang Saku :</label>
+        <input
+          type="number"
+          id="uang"
+          name="uang"
+          min="100000"
+          max="1000000"
+          required
+        /><br /><br />
+
+        <button type="button" onclick="validateForm()">Submit</button>
+        <button type="button" id="resetButton" onclick="resetForm()">
+          Reset
+        </button>
+
+        <!-- Tombol Reset -->
+      </form>
+    </div>
+
+    <!-- ... (kode sebelumnya) ... -->
+
+    <div id="ListPendaftarcontent" class="tabcontent">
+      <h2>List Pendaftar</h2>
+      <p>
+        Resume Rata-rata pendaftar memiliki uang saku sebesar
+        <span id="rataUangSaku">0</span> dengan rata-rata umur
+        <span id="rataUmur">0</span>
+      </p>
+
+      <table id="pendaftarTable">
+        <thead>
+          <tr>
+            <th>Nama</th>
+            <th>Umur</th>
+            <th>Uang Saku</th>
+            <th>Resume</th>
+          </tr>
+        </thead>
+        <tbody id="pendaftarBody"></tbody>
+      </table>
+    </div>
+
+    <!-- ... (kode selanjutnya) ... -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
